@@ -65,6 +65,21 @@ $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
  ```
 roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ```
+![image](https://github.com/user-attachments/assets/66a0273e-4481-4444-a049-9f616217e254)
+
+
+  create a map and save it
+```
+rosrun map_server map_saver -f ~/map
+```
+then run this command:
+```
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+```
+![image](https://github.com/user-attachments/assets/a91d5e7a-10e3-4ddf-85d8-5743510301b8)
+
+
+
 
 
 ## Run Teleoperation Node
@@ -74,6 +89,17 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
 ![image](https://github.com/user-attachments/assets/4e1143d6-c757-4751-ae52-c29973c58c10)
+
+
+
+###  navigation
+
+start the navigation and load the saved map, using this command:
+```
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='/home/muh/map.yaml'
+```
+
+![image](https://github.com/user-attachments/assets/3e009ec6-5164-432f-9d66-c3b7a95769de)
 
 
 
