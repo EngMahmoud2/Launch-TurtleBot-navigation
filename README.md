@@ -1,6 +1,6 @@
 # Launch-TurtleBot-navigation
 
-##Install ROS on Remote PC
+## Install ROS on Remote PC
 Open the terminal with Ctrl+Alt+T and enter below commands one at a time.
 In order to check the details of the easy installation script, please refer to the script file.
 
